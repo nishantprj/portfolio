@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="/assets/ico.png" type="image/x-icon">
+    <title>About</title>
+</head>
+<style>
+    *{
+        font-family: "Inter";
+    }
+.cursorstyle:hover{
+    cursor: text;
+    
+}
+.clipcontainer1{
+  display: -webkit-box;
+  -webkit-line-clamp: 1;  /* Limits the text to 2 lines */
+  -webkit-box-orient: vertical;  /* Specifies the box's orientation */
+  overflow: hidden;  /* Hides the overflowed text */
+  text-overflow: ellipsis;  /* Adds the ellipsis (...) */
+
+}
+
+.clipcontainer2{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;  /* Limits the text to 2 lines */
+  -webkit-box-orient: vertical;  /* Specifies the box's orientation */
+  overflow: hidden;  /* Hides the overflowed text */
+  text-overflow: ellipsis;  /* Adds the ellipsis (...) */
+
+}
+
+</style>
+<body style="background: #ffffff;">
+
+
+
+    <div class="container-xxl w-full px-[0px] flex flex-col justify-between items-start relative">
+        <div class="flex w-full px-[18px] py-[13px] justify-between items-center gap-[10px] fixed bg-[#4394BA] z-1" style="border-bottom: 1px solid #ffffff21; top: 0; left: 0;">
+
+            <div class="w-[137px]">
+                <a href="/index.html" class="text-white w-full text-end text-[24px] not-italic font-semibold leading-normal" style="font-family: Montserrat;">NISHANT</a>
+            </div>
+
+            <div class="flex w-full justify-center">
+                <div class="w-full flex max-w-[1080px] justify-start">
+                    <div id="searchbar" class=" flex w-full max-w-[850px] py-[11px] px-[13px] rounded-[24px] items-center gap-[14px] bg-white relative">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M11 5C9.9122 5 8.84884 5.32257 7.94437 5.92692C7.0399 6.53126 6.33495 7.39025 5.91866 8.39524C5.50238 9.40023 5.39346 10.5061 5.60568 11.573C5.8179 12.6399 6.34173 13.6199 7.11092 14.3891C7.8801 15.1583 8.86011 15.6821 9.92701 15.8943C10.9939 16.1065 12.0998 15.9976 13.1048 15.5813C14.1098 15.1651 14.9687 14.4601 15.5731 13.5556C16.1774 12.6512 16.5 11.5878 16.5 10.5C16.4999 9.04134 15.9204 7.64244 14.889 6.61101C13.8576 5.57959 12.4587 5.00009 11 5Z" stroke="#626569" stroke-width="1.5" stroke-miterlimit="10"/>
+                            <path d="M15.5 15L19.5 19" stroke="#626569" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                        </svg>
+                        <div class="cursor-text w-full relative" onclick="toggleDropdown()">
+                            <p id="searchtext" class="text-[#626569] text-[14px] leading-normal">Search</p>
+                            
+                        </div>
+                        <div id="dropdown" class="absolute hidden bg-white shadow-lg mt-10 w-full pb-[5px] overflow-hidden" style="top:0; left:0; border-radius: 0px 0px 24px 24px;">
+                            <ul class="list-none">
+
+                                <a href="/index.html" class="w-auto">
+                                    <div class="flex px-[13px] py-[8px] items-center gap-[14px] bg-white hover:bg-[#E9E9EA]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M16.649 8.4L10.7994 14.4L7.67967 11.2L3 16M13.1393 8H17V12" stroke="#656569" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <p class="text-[#626569] text-[14px] leading-normal">Home</p>
+                                    </div>
+                                </a>
+
+    
+                                <a href="#" class="w-auto">
+                                    <div class="flex px-[13px] py-[8px] items-center gap-[14px] bg-white hover:bg-[#E9E9EA]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M16.649 8.4L10.7994 14.4L7.67967 11.2L3 16M13.1393 8H17V12" stroke="#656569" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <p class="text-[#626569] text-[14px] leading-normal">About</p>
+                                    </div>
+                                </a>
+    
+                              
+    
+                            
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+            
+                
+
+            <div class="flex items-center gap-[11px] relative"> 
+                <a href="#" class="text-white text-[14px] not-italic font-normal leading-normal hover:underline">About</a>
+                <a href="#" onclick="profileapps()" class="w-[38px] h-[38px] flex justify-center items-center bg-transparent hover:bg-[rgba(255,255,255,0.10)] rounded-[50px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="6" r="2" fill="white"/>
+                        <circle cx="18" cy="12" r="2" fill="white"/>
+                        <circle cx="18" cy="18" r="2" fill="white"/>
+                        <circle cx="18" cy="6" r="2" fill="white"/>
+                        <circle cx="12" cy="12" r="2" fill="white"/>
+                        <circle cx="12" cy="18" r="2" fill="white"/>
+                        <circle cx="6" cy="6" r="2" fill="white"/>
+                        <circle cx="6" cy="12" r="2" fill="white"/>
+                        <circle cx="6" cy="18" r="2" fill="white"/>
+                        </svg>
+                </a>
+                <a href="#" onclick="profile()" class="w-[38px] h-[38px] flex justify-center items-center bg-transparent hover:bg-[rgba(255,255,255,0.10)] rounded-[50px]">
+                    <img src="/assets/profile.jpg" class="w-[32px] h-[32px] rounded-[40px]" alt="">
+                </a>
+                
+                <div id="profile" class="absolute hidden flex w-[300px] shadow-lg p-[18px] bg-[#ffffff] rounded-[21px] overflow-hidden" style="top: 50px; right: 0;">
+                    <div class="flex flex-col justify-center items-center gap-[18px] w-full relative">
+                        <div class="close absolute cursor-pointer" onclick="profile()" style="top: 0; right: 0;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M7 7L17 17M7 17L17 7" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                        </div>
+                        <p class="text-[#000000] w-full text-center text-[14px] leading-normal">nishatprj8@gmail.com</p>
+                        <img src="/assets/profile.jpg" class="w-[80px] h-[80px] rounded-[40px]" style="object-fit: cover; overflow: hidden;" alt="">
+                        <p class="text-[#000000] w-full text-center text-[14px] leading-normal">Welcome to my portfolio. Working with me means smarter, seamless, and user-centric designs that elevate your product.</p>
+                    </div>
+                </div>
+
+                <div id="profileapps" class="absolute shadow-lg hidden flex w-[300px] p-[8px] bg-[#E9E9EA] rounded-[21px] overflow-hidden" style="top: 50px; right: 0;">
+                    <div class="flex justify-center items-center gap-[12px] w-full bg-[#ffffff] rounded-[18px] p-[18px] relative">
+                        <a href="https://github.com/nishantprj" target="_blank" class="w-full">
+                            <div class="flex w-full h-auto p-[7px] flex-col justify-center items-center gap-[5px] hover:bg-[rgba(0,0,0,0.06)] rounded-[11px]">
+                                <div class="flex w-[48px] h-[48px] flex-col justify-center items-center gap-[10px] rounded-[80px]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35" fill="none">
+                                        <path d="M18 2.91667C16.0849 2.91667 14.1885 3.29388 12.4192 4.02676C10.6499 4.75964 9.0422 5.83384 7.68802 7.18803C4.95311 9.92294 3.41666 13.6323 3.41666 17.5C3.41666 23.9458 7.60207 29.4146 13.3917 31.3542C14.1208 31.4708 14.3542 31.0188 14.3542 30.625V28.1604C10.3146 29.0354 9.45416 26.2063 9.45416 26.2063C8.78332 24.5146 7.83541 24.0625 7.83541 24.0625C6.50832 23.1583 7.93749 23.1875 7.93749 23.1875C9.39582 23.2896 10.1687 24.6896 10.1687 24.6896C11.4375 26.9063 13.5812 26.25 14.4125 25.9C14.5437 24.9521 14.9229 24.3104 15.3312 23.9458C12.0937 23.5813 8.69582 22.3271 8.69582 16.7708C8.69582 15.1521 9.24999 13.8542 10.1979 12.8188C10.0521 12.4542 9.54166 10.9375 10.3437 8.96876C10.3437 8.96876 11.5687 8.57501 14.3542 10.4563C15.5062 10.1354 16.7604 9.97501 18 9.97501C19.2396 9.97501 20.4937 10.1354 21.6458 10.4563C24.4312 8.57501 25.6562 8.96876 25.6562 8.96876C26.4583 10.9375 25.9479 12.4542 25.8021 12.8188C26.75 13.8542 27.3042 15.1521 27.3042 16.7708C27.3042 22.3417 23.8917 23.5667 20.6396 23.9313C21.1646 24.3833 21.6458 25.2729 21.6458 26.6292V30.625C21.6458 31.0188 21.8792 31.4854 22.6229 31.3542C28.4125 29.4 32.5833 23.9458 32.5833 17.5C32.5833 15.5849 32.2061 13.6885 31.4732 11.9192C30.7404 10.1499 29.6661 8.54222 28.312 7.18803C26.9578 5.83384 25.3501 4.75964 23.5808 4.02676C21.8115 3.29388 19.9151 2.91667 18 2.91667Z" fill="black"/>
+                                        </svg>
+                                </div>
+                                <p class="text-[#000000] text-[14px]  leading-normal">Github</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.behance.net/nishantprajapati" target="_blank" class="w-full">
+                            <div class="flex w-full h-auto p-[7px] flex-col justify-center items-center gap-[5px] hover:bg-[rgba(0,0,0,0.06)] rounded-[11px]">
+                                <div class="flex w-[48px] h-[48px] flex-col justify-center items-center gap-[10px] rounded-[80px]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                        <g clip-path="url(#clip0_128_24)">
+                                          <path d="M9.85763 9.80276C9.85763 8.34839 8.86841 8.34839 8.86841 8.34839H4.80591V11.4664H8.61653C9.27466 11.4664 9.85763 11.2551 9.85763 9.80276ZM8.86841 13.6215H4.80591V17.355H8.6856C9.26856 17.3387 10.3472 17.1518 10.3472 15.539C10.3411 13.6093 8.86841 13.6215 8.86841 13.6215ZM19.2826 11.4664C17.1234 11.4664 16.8228 13.6195 16.8228 13.6195H21.4134C21.4134 13.6195 21.4418 11.4664 19.2826 11.4664Z" fill="black"/>
+                                          <path d="M22.5976 0.438721H3.40231C2.61632 0.438721 1.86252 0.750955 1.30674 1.30674C0.750955 1.86252 0.438721 2.61632 0.438721 3.40231V22.5956C0.438721 23.3816 0.750955 24.1354 1.30674 24.6912C1.86252 25.247 2.61632 25.5592 3.40231 25.5592H22.5956C23.3816 25.5592 24.1354 25.247 24.6912 24.6912C25.247 24.1354 25.5592 23.3816 25.5592 22.5956V3.40231C25.5592 2.61667 25.2472 1.86318 24.6919 1.30746C24.1365 0.751732 23.3833 0.439259 22.5976 0.438721ZM16.2215 6.68685H21.9862V8.40935H16.2215V6.68685ZM13.3067 15.7137C13.3067 19.9793 8.86841 19.8392 8.86841 19.8392H1.59653V5.86419H8.86841C11.0784 5.86419 12.8233 7.08294 12.8233 9.58544C12.8233 12.0879 10.6904 12.2443 10.6904 12.2443C13.5017 12.2443 13.3067 15.7137 13.3067 15.7137ZM24.0906 15.4862H16.8593C16.8593 18.0822 19.3192 17.9237 19.3192 17.9237C21.6409 17.9237 21.5536 16.4206 21.5536 16.4206H24.0093C24.0093 20.41 19.2278 20.1358 19.2278 20.1358C13.4895 20.1358 13.8592 14.7936 13.8592 14.7936C13.8592 14.7936 13.8592 9.42497 19.2278 9.42497C24.8848 9.42091 24.0926 15.4862 24.0926 15.4862H24.0906Z" fill="black"/>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_128_24">
+                                            <rect width="26" height="26" fill="white"/>
+                                          </clipPath>
+                                        </defs>
+                                      </svg>
+                                </div>
+                                <p class="text-[#000000] text-[14px]  leading-normal">Behance</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/nishantprj/" target="_blank" class="w-full">
+                            <div class="flex w-full h-auto p-[7px] flex-col justify-center items-center gap-[5px] hover:bg-[rgba(0,0,0,0.06)] rounded-[11px]">
+                                <div class="flex w-[48px] h-[48px] flex-col justify-center items-center gap-[10px] rounded-[80px]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                        <g clip-path="url(#clip0_105_51)">
+                                          <path d="M23.5625 0.609347H2.4375C1.95819 0.604469 1.49652 0.789934 1.15379 1.12505C0.81106 1.46016 0.615268 1.91755 0.609375 2.39685V23.6072C0.616334 24.0858 0.812594 24.5421 1.15521 24.8763C1.49782 25.2106 1.95888 25.3955 2.4375 25.3906H23.5625C24.0418 25.3944 24.5032 25.2083 24.8458 24.873C25.1883 24.5377 25.3842 24.0804 25.3906 23.6011V2.39075C25.3821 1.91286 25.1852 1.45765 24.8429 1.12408C24.5006 0.790503 24.0405 0.605524 23.5625 0.609347Z" fill="#0076B2"/>
+                                          <path d="M4.27779 9.89825H7.95638V21.7343H4.27779V9.89825ZM6.1181 4.00763C6.54002 4.00763 6.95246 4.13277 7.30324 4.36721C7.65402 4.60166 7.92739 4.93488 8.08876 5.32472C8.25013 5.71456 8.29224 6.1435 8.20978 6.55728C8.12732 6.97106 7.92399 7.35109 7.62551 7.64929C7.32703 7.94748 6.94681 8.15045 6.53295 8.23252C6.11909 8.31459 5.69019 8.27206 5.3005 8.11032C4.91082 7.94858 4.57786 7.6749 4.34375 7.32389C4.10964 6.97288 3.98489 6.56033 3.98529 6.13841C3.98583 5.57311 4.21077 5.03114 4.6107 4.6316C5.01062 4.23206 5.5528 4.00763 6.1181 4.00763ZM10.2639 9.89825H13.7901V11.5233H13.8389C14.3304 10.5929 15.5289 9.61185 17.3184 9.61185C21.0437 9.60372 21.7344 12.0554 21.7344 15.2343V21.7343H18.0558V15.9758C18.0558 14.6047 18.0314 12.8395 16.1444 12.8395C14.2573 12.8395 13.9364 14.3345 13.9364 15.8864V21.7343H10.2639V9.89825Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_105_51">
+                                            <rect width="26" height="26" fill="white"/>
+                                          </clipPath>
+                                        </defs>
+                                      </svg>
+                                </div>
+                                <p class="text-[#000000] text-[14px]  leading-normal">LinkedIn</p>
+                            </div>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+  
+
+        <div class="flex w-full justify-center mt-[100px] px-[15px]">
+            <div class="max-w-[1080px] w-full gap-[30px] flex">
+                
+                <div class="flex w-[70%] gap-[10px] flex-col">
+                    <div class="flex flex-col gap-[4px]">
+                        <p class="text-[#000000] text-[28px] leading-normal" style="font-weight: 500;">Nishant Prajapati</p>
+                    
+                    </div>
+                    <div class="w-full flex items-start gap-[15px]">
+                        
+                        <div class="flex gap-[4px] flex-col w-full">
+                                <p href="#" class="text-[#4e5155] w-full text-[14px] leading-normal">I'm a creative spirit who thrives at the intersection of risk consulting, UI/UX design, and technology. <br><br>Balancing my role at PwC with my studies in Automotive Engineering at Delhi Technological University, I’m driven by the excitement of turning complex challenges into elegant digital solutions. <br><br>Every project, whether on Upwork or during my internship at UVAH CARE, fuels my passion for learning and innovation. With certifications in SQL, Machine Learning, and Google’s UX Design enriching my journey, I pour heart and soul into crafting experiences that truly resonate with people.</p>
+                        </div>
+                        <div class="w-[120px] flex gap-[8px] items-center" style="aspect-ratio: 1/1;" >
+                            <img src="/assets/profile.jpg" class="w-full h-full cover rounded-[8px]" style="object-fit: cover;" alt="">
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="flex w-[30%] p-[20px] flex-col gap-[15px]" style="border-left: 1px solid #d3d3d3;">
+                    <div class="flex flex-col gap-[5px]">
+                        <p class="text-[#000000] text-[16px]  leading-normal"><b>Education</b></p>
+                        <p class="text-[#000000] text-[14px]  leading-normal pb-[5px]" ><b>B.Tech (Automotive Engineering)</b> Delhi Techological University (2020-2024)</p>
+                        <p class="text-[#000000] text-[14px]  leading-normal"><b>CBSE (10+2)</b> Kendriya Vidyalaya AFS Tughlakabad, Delhi (2020)</p>
+                    </div>
+
+                    <div class="flex flex-col gap-[5px]">
+                        <p class="text-[#000000] text-[16px]  leading-normal"><b>Experiance</b></p>
+                        <p class="text-[#000000] text-[14px]  leading-normal pb-[5px]"><b>PwC India</b> (Associate Consultant) | September 2024 - Present (6 months) at Gurugram, Haryana, India</p>
+                        <p class="text-[#000000] text-[14px]  leading-normal pb-[5px]"><b>Upwork</b> (UX/UI Designer) | December 2021 - August 2024 (2 years 9 months), Remote</p>
+                        <p class="text-[#000000] text-[14px]  leading-normal"><b>Uvahcare</b> (UX/UI Designer) | April 2022 - May 2022 (2 months) at Delhi, India</p>
+                    </div>
+                    
+                    
+                    
+
+                </div>
+            
+            </div>
+        </div>
+
+
+        <div class="flex w-full p-[15px] justify-center bg-[#F2F2F2] mt-10">
+            <div class="flex w-full flex-col max-w-[1080px] gap-[10px] py-[20px]">
+                <p class="text-[#4E5155] text-[14px]  leading-normal">New Delhi, India</p>
+                <div class="w-full" style="border-bottom: 1px solid #d3d3d3;"></div>
+                
+                <div class="flex gap-[20px]">
+                    <a href="/index.html" class="text-[#4E5155] hover:underline text-[14px]  leading-normal">Home</a>
+                    <a href="/about.html" class="text-[#4E5155] hover:underline text-[14px]  leading-normal">About</a>
+                    <a href="/projects.html" class="text-[#4E5155] hover:underline text-[14px]  leading-normal">Projects</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+    
+
+
+
+
+
+
+
+    
+      
+      <!-- JavaScript to toggle dropdown visibility -->
+    <script>
+    function toggleDropdown() {
+        const dropdown = document.getElementById('dropdown');
+        const searchbar = document.getElementById('searchbar');
+        const searchtext = document.getElementById('searchtext');
+        dropdown.classList.toggle('hidden');
+        searchtext.style.color='#ffffff';
+        if (!dropdown.classList.contains('hidden')) {
+            searchbar.style.borderTopLeftRadius = '24px';
+            searchbar.style.borderTopRightRadius = '24px';
+            searchbar.style.borderBottomLeftRadius = '0px';
+            searchbar.style.borderBottomRightRadius = '0px';
+        } else {
+            searchbar.style.borderRadius = '24px';
+        }
+
+    }
+    document.addEventListener('click', function(event) {
+        const dropdown = document.getElementById('dropdown');
+        const searchtext = document.getElementById('searchtext');
+        
+        
+      
+        // If the click is outside the dropdown and searchbar, close the dropdown
+        if (!dropdown.contains(event.target) && !searchbar.contains(event.target)) {
+            dropdown.classList.add('hidden');
+            searchbar.style.borderRadius = '24px';
+            searchtext.style.color='#626569';
+
+        }
+    });
+
+    function profile() {
+    const dropdown = document.getElementById('profile');
+    dropdown.classList.toggle('hidden');
+
+    // Remove existing event listener to prevent duplicates
+    document.removeEventListener('click', closeOnClickOutside);
+
+    // Add event listener only if dropdown is open
+    if (!dropdown.classList.contains('hidden')) {
+        document.addEventListener('click', closeOnClickOutside);
+    }
+}
+
+function closeOnClickOutside(event) {
+    const dropdown = document.getElementById('profile');
+    const profileButton = document.querySelector('a[onclick="profile()"]');
+
+    if (!dropdown.contains(event.target) && !profileButton.contains(event.target)) {
+        dropdown.classList.add('hidden');
+        document.removeEventListener('click', closeOnClickOutside);
+    }
+}
+
+
+
+function profileapps() {
+    const dropdown = document.getElementById('profileapps');
+    dropdown.classList.toggle('hidden');
+
+    // Remove existing event listener to prevent duplicates
+    document.removeEventListener('click', closeOnClickOutside);
+
+    // Add event listener only if dropdown is open
+    if (!dropdown.classList.contains('hidden')) {
+        document.addEventListener('click', closeOnClickOutside);
+    }
+}
+
+function closeOnClickOutside(event) {
+    const dropdown = document.getElementById('profileapps');
+    const profileappsButton = document.querySelector('a[onclick="profileapps()"]');
+
+    if (!dropdown.contains(event.target) && !profileappsButton.contains(event.target)) {
+        dropdown.classList.add('hidden');
+        document.removeEventListener('click', closeOnClickOutside);
+    }
+}
+    </script>
+    
+
+
+
+</body>
+</html>
