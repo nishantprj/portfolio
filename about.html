@@ -6,7 +6,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="icon" href="assets/ico.png" type="image/x-icon">
+    <link rel="icon" href="/assets/ico.png" type="image/x-icon">
     <title>About</title>
 </head>
 <style>
@@ -41,10 +41,10 @@
 
 
     <div class="container-xxl w-full px-[0px] flex flex-col justify-between items-start relative">
-        <div class="flex w-full px-[18px] py-[13px] justify-between items-center gap-[10px] fixed bg-[#4394BA] z-1" style="border-bottom: 1px solid #ffffff21; top: 0; left: 0;">
+        <div class="flex w-full px-[18px] py-[13px] justify-between items-center gap-[10px] fixed bg-[#4394BA]" style="border-bottom: 1px solid #ffffff21; top: 0; left: 0; z-index: 1;">
 
-            <div class="w-[137px]">
-                <a href="index.html" class="text-white w-full text-end text-[24px] not-italic font-semibold leading-normal" style="font-family: Montserrat;">NISHANT</a>
+            <div class="w-[137px] hidden sm:flex">
+                <a href="/index.html" class="text-white w-full text-end text-[24px] not-italic font-semibold leading-normal" style="font-family: Montserrat;">NISHANT</a>
             </div>
 
             <div class="flex w-full justify-center">
@@ -61,7 +61,7 @@
                         <div id="dropdown" class="absolute hidden bg-white shadow-lg mt-10 w-full pb-[5px] overflow-hidden" style="top:0; left:0; border-radius: 0px 0px 24px 24px;">
                             <ul class="list-none">
 
-                                <a href="index.html" class="w-auto">
+                                <a href="/index.html" class="w-auto">
                                     <div class="flex px-[13px] py-[8px] items-center gap-[14px] bg-white hover:bg-[#E9E9EA]">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                             <path d="M16.649 8.4L10.7994 14.4L7.67967 11.2L3 16M13.1393 8H17V12" stroke="#656569" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -71,12 +71,12 @@
                                 </a>
 
     
-                                <a href="#" class="w-auto">
+                                <a href="projects.html" class="w-auto">
                                     <div class="flex px-[13px] py-[8px] items-center gap-[14px] bg-white hover:bg-[#E9E9EA]">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                             <path d="M16.649 8.4L10.7994 14.4L7.67967 11.2L3 16M13.1393 8H17V12" stroke="#656569" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
-                                        <p class="text-[#626569] text-[14px] leading-normal">About</p>
+                                        <p class="text-[#626569] text-[14px] leading-normal">Projects</p>
                                     </div>
                                 </a>
     
@@ -94,8 +94,8 @@
                 
 
             <div class="flex items-center gap-[11px] relative"> 
-                <a href="#" class="text-white text-[14px] not-italic font-normal leading-normal hover:underline">About</a>
-                <a href="#" onclick="profileapps()" class="w-[38px] h-[38px] flex justify-center items-center bg-transparent hover:bg-[rgba(255,255,255,0.10)] rounded-[50px]">
+                <a href="about.html" class="sm:flex hidden text-white text-[14px] not-italic font-normal leading-normal hover:underline">About</a>
+                <a onclick="profileapps()" class="cursor-pointer w-[38px] h-[38px] flex justify-center items-center bg-transparent hover:bg-[rgba(255,255,255,0.10)] rounded-[50px]">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <circle cx="12" cy="6" r="2" fill="white"/>
                         <circle cx="18" cy="12" r="2" fill="white"/>
@@ -108,7 +108,7 @@
                         <circle cx="6" cy="18" r="2" fill="white"/>
                         </svg>
                 </a>
-                <a href="#" onclick="profile()" class="w-[38px] h-[38px] flex justify-center items-center bg-transparent hover:bg-[rgba(255,255,255,0.10)] rounded-[50px]">
+                <a onclick="profile()" class="cursor-pointer w-[38px] h-[38px] flex justify-center items-center bg-transparent hover:bg-[rgba(255,255,255,0.10)] rounded-[50px]">
                     <img src="assets/profile.jpg" class="w-[32px] h-[32px] rounded-[40px]" alt="">
                 </a>
                 
@@ -184,26 +184,144 @@
   
 
         <div class="flex w-full justify-center mt-[100px] px-[15px]">
-            <div class="max-w-[1080px] w-full gap-[30px] flex">
+            <div class="max-w-[1080px] w-full flex-col sm:flex-row gap-[30px] flex">
                 
-                <div class="flex w-[70%] gap-[10px] flex-col">
+                <div class="flex w-full sm:w-[70%] gap-[10px] flex-col">
                     <div class="flex flex-col gap-[4px]">
                         <p class="text-[#000000] text-[28px] leading-normal" style="font-weight: 500;">Nishant Prajapati</p>
                     
                     </div>
-                    <div class="w-full flex items-start gap-[15px]">
+                    <div class="w-full flex items-center sm:items-start sm:flex-row flex-col gap-[15px]">
                         
-                        <div class="flex gap-[4px] flex-col w-full">
-                                <p href="#" class="text-[#4e5155] w-full text-[14px] leading-normal">I'm a creative spirit who thrives at the intersection of risk consulting, UI/UX design, and technology. <br><br>Balancing my role at PwC with my studies in Automotive Engineering at Delhi Technological University, I’m driven by the excitement of turning complex challenges into elegant digital solutions. <br><br>Every project, whether on Upwork or during my internship at UVAH CARE, fuels my passion for learning and innovation. With certifications in SQL, Machine Learning, and Google’s UX Design enriching my journey, I pour heart and soul into crafting experiences that truly resonate with people.</p>
+                        <div  class="flex gap-[4px] flex-col sm:order-1 order-2 w-full ">
+                                <div id="textContainer" class="overflow-hidden transition-all max-h-[120px] duration-100 w-full relative">
+                                    <p class="text-[#4e5155] w-full text-[14px] leading-normal">I'm a creative spirit who thrives at the intersection of risk consulting, UI/UX design, and technology. <br><br>Balancing my role at PwC with my studies in Automotive Engineering at Delhi Technological University, I’m driven by the excitement of turning complex challenges into elegant digital solutions. <br><br>Every project, whether on Upwork or during my internship at UVAH CARE, fuels my passion for learning and innovation. With certifications in SQL, Machine Learning, and Google’s UX Design enriching my journey, I pour heart and soul into crafting experiences that truly resonate with people.</p>
+                                    <div id="fadeOverlay" class="absolute bottom-0 left-0 w-full h-[50px] bg-gradient-to-t from-white to-transparent"></div>
+                                </div>
+                                <button id="toggleButton1" class="mt-3 w-full px-4 py-2 bg-white text-[#000000] text-[14px] rounded-[50px]" style="border: 1px solid #ABC8FA;">Show More</button>
+                                
+                                <div class="flex flex-col gap-[8px] mt-[30px] bg-[#E9F0FD] rounded-[12px] p-[12px]">
+                                    <p class="text-[#321103] text-[16px]  leading-normal"><b>My Tools</b></p>
+                                    <div style="border-bottom: 1px solid #D5E2FA;"></div>
+                                    <div class="flex flex-wrap gap-[12px] pt-[5px]">
+                                        <div class="pl-[8px] pr-[15px] py-[6px] flex gap-[5px] justify-center items-center text-[13px] bg-[#D5E2FA] text-[#2A57D0] rounded-[30px]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <g clip-path="url(#clip0_149_77)">
+                                                  <path d="M8.53125 24.1875C10.7625 24.1875 12.5625 22.3875 12.5625 20.1562V16.125H8.53125C6.3 16.125 4.5 17.925 4.5 20.1562C4.5 22.3875 6.3 24.1875 8.53125 24.1875Z" fill="#0ACF83"/>
+                                                  <path d="M4.5 12.0938C4.5 9.8625 6.3 8.0625 8.53125 8.0625H12.5625V16.125H8.53125C6.3 16.125 4.5 14.325 4.5 12.0938Z" fill="#A259FF"/>
+                                                  <path d="M4.5 4.03125C4.5 1.8 6.3 0 8.53125 0H12.5625V8.0625H8.53125C6.3 8.0625 4.5 6.2625 4.5 4.03125Z" fill="#F24E1E"/>
+                                                  <path d="M12.5625 0H16.5938C18.825 0 20.625 1.8 20.625 4.03125C20.625 6.2625 18.825 8.0625 16.5938 8.0625H12.5625V0Z" fill="#FF7262"/>
+                                                  <path d="M20.625 12.0938C20.625 14.325 18.825 16.125 16.5938 16.125C14.3625 16.125 12.5625 14.325 12.5625 12.0938C12.5625 9.8625 14.3625 8.0625 16.5938 8.0625C18.825 8.0625 20.625 9.8625 20.625 12.0938Z" fill="#1ABCFE"/>
+                                                </g>
+                                                <defs>
+                                                  <clipPath id="clip0_149_77">
+                                                    <rect width="24" height="24" fill="white"/>
+                                                  </clipPath>
+                                                </defs>
+                                              </svg>
+                                            <p>Figma</p>
+                                        </div>
+                                        <div class="pl-[8px] pr-[15px] py-[6px] flex gap-[5px] justify-center items-center text-[13px] bg-[#D5E2FA] text-[#2A57D0] rounded-[30px]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <g clip-path="url(#clip0_149_89)">
+                                                  <path d="M4.25006 0.299805H19.7499C22.1001 0.299805 24 2.19974 24 4.54987V19.4497C24 21.7999 22.1001 23.6998 19.7499 23.6998H4.25006C1.89994 23.6998 0 21.7999 0 19.4497V4.54987C0 2.19974 1.89994 0.299805 4.25006 0.299805Z" fill="#470137"/>
+                                                  <path d="M12.6202 6.44976L9.62016 11.3998L12.82 16.6498C12.8401 16.6897 12.85 16.7298 12.8401 16.7698C12.8302 16.8097 12.79 16.7797 12.73 16.7898H10.4401C10.2802 16.7898 10.1701 16.7797 10.1002 16.6798C9.89016 16.2598 9.67003 15.8497 9.46003 15.4297C9.25003 15.0198 9.02016 14.5998 8.78016 14.1697C8.54016 13.7396 8.30016 13.3098 8.06016 12.8698H8.04009C7.83009 13.2997 7.60003 13.7298 7.37016 14.1598C7.14164 14.5855 6.91495 15.0122 6.69009 15.4398C6.46003 15.8598 6.23016 16.2898 6.00009 16.6998C5.96016 16.7998 5.88009 16.8097 5.77003 16.8097H3.57009C3.53016 16.8097 3.50016 16.8298 3.50016 16.7797C3.49568 16.761 3.49513 16.7416 3.49855 16.7227C3.50197 16.7038 3.50929 16.6858 3.52003 16.6698L6.63009 11.5698L3.60009 6.43982C3.57009 6.3997 3.56016 6.35976 3.58003 6.3397C3.60009 6.3097 3.64003 6.29976 3.68016 6.29976H5.95003C6.00009 6.29976 6.05016 6.3097 6.09009 6.31982C6.13003 6.3397 6.16003 6.3697 6.19003 6.40982C6.38016 6.83976 6.60009 7.2697 6.83016 7.69982C7.07016 8.12976 7.30003 8.54976 7.55016 8.96976C7.79016 9.38976 8.01009 9.80976 8.22009 10.2397H8.24016C8.45016 9.79982 8.67009 9.3697 8.89003 8.9497C9.10997 8.5297 9.34003 8.1097 9.57009 7.6897C9.80016 7.2697 10.0201 6.83976 10.24 6.4297C10.2502 6.38976 10.27 6.34982 10.3 6.32976C10.3402 6.3097 10.3801 6.29976 10.4302 6.3097H12.5401C12.5519 6.30702 12.5642 6.30671 12.5761 6.30879C12.5881 6.31088 12.5995 6.3153 12.6097 6.32182C12.62 6.32834 12.6288 6.33683 12.6358 6.34678C12.6427 6.35674 12.6476 6.36797 12.6502 6.37982C12.6601 6.38976 12.64 6.4297 12.6202 6.44976ZM17.2402 16.9998C16.5001 17.0098 15.76 16.8598 15.0901 16.5498C14.4601 16.2598 13.9402 15.7798 13.5802 15.1897C13.21 14.5798 13.03 13.8198 13.03 12.9097C13.0201 12.1698 13.21 11.4397 13.5802 10.7998C13.96 10.1497 14.5102 9.6097 15.1702 9.2497C15.8701 8.8597 16.7101 8.66976 17.7001 8.66976C17.7502 8.66976 17.8201 8.66976 17.9101 8.6797C18.0001 8.68982 18.1 8.68982 18.22 8.69976V5.53982C18.22 5.4697 18.25 5.42976 18.3202 5.42976H20.35C20.4001 5.41982 20.44 5.45976 20.4502 5.4997V15.0397C20.4502 15.2197 20.4601 15.4198 20.47 15.6397C20.4901 15.8497 20.5 16.0498 20.5102 16.2198C20.5102 16.2898 20.4802 16.3498 20.41 16.3798C19.8863 16.5999 19.3396 16.7609 18.7801 16.8598C18.2701 16.9498 17.7601 16.9998 17.2402 16.9998ZM18.22 14.9998V10.5997C18.13 10.5798 18.04 10.5598 17.95 10.5498C17.8404 10.538 17.7303 10.5313 17.62 10.5298C17.23 10.5298 16.84 10.6098 16.4902 10.7898C16.1484 10.9601 15.8558 11.2147 15.64 11.5297C15.4201 11.8498 15.31 12.2797 15.31 12.7998C15.3015 13.1508 15.3592 13.5002 15.4801 13.8298C15.58 14.0998 15.73 14.3398 15.9301 14.5398C16.1228 14.7239 16.3556 14.8608 16.6102 14.9398C16.8802 15.0298 17.1601 15.0697 17.44 15.0697C17.59 15.0697 17.7301 15.0598 17.86 15.0498C17.9902 15.0598 18.1 15.0397 18.22 14.9998Z" fill="#FF61F6"/>
+                                                </g>
+                                                <defs>
+                                                  <clipPath id="clip0_149_89">
+                                                    <rect width="24" height="24" fill="white"/>
+                                                  </clipPath>
+                                                </defs>
+                                              </svg>
+                                            <p>Adobe XD</p>
+                                        </div>
+                                        <div class="pl-[8px] pr-[15px] py-[6px] flex gap-[5px] justify-center items-center text-[13px] bg-[#D5E2FA] text-[#2A57D0] rounded-[30px]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <g clip-path="url(#clip0_149_95)">
+                                                  <path d="M22.9366 0H11.4099C11.4099 0.683316 11.5445 1.35994 11.8059 1.99125C12.0674 2.62256 12.4507 3.19618 12.9339 3.67935C13.417 4.16253 13.9907 4.5458 14.622 4.80728C15.2533 5.06877 15.9299 5.20334 16.6132 5.20331H18.7366V7.25344C18.7384 10.1245 21.0654 12.4516 23.9365 12.4535V0.999938C23.9365 0.447844 23.4889 0 22.9366 0Z" fill="#2684FF"/>
+                                                  <path d="M17.2334 5.74316H5.70679C5.70857 8.61426 8.03554 10.9413 10.9067 10.9432H13.0301V12.9999C13.0337 15.871 15.3623 18.1964 18.2334 18.1964V6.74329C18.2334 6.19101 17.7856 5.74316 17.2334 5.74316Z" fill="url(#paint0_linear_149_95)"/>
+                                                  <path d="M11.5267 11.4834H0C0 14.3571 2.32969 16.6867 5.20331 16.6867H7.33331V18.7367C7.33519 21.6052 9.65812 23.9312 12.5267 23.9367V12.4834C12.5267 11.9311 12.0789 11.4834 11.5267 11.4834Z" fill="url(#paint1_linear_149_95)"/>
+                                                </g>
+                                                <defs>
+                                                  <linearGradient id="paint0_linear_149_95" x1="1233.7" y1="7.74816" x2="746.356" y2="516.272" gradientUnits="userSpaceOnUse">
+                                                    <stop offset="0.18" stop-color="#0052CC"/>
+                                                    <stop offset="1" stop-color="#2684FF"/>
+                                                  </linearGradient>
+                                                  <linearGradient id="paint1_linear_149_95" x1="1261" y1="17.1496" x2="697.263" y2="571.794" gradientUnits="userSpaceOnUse">
+                                                    <stop offset="0.18" stop-color="#0052CC"/>
+                                                    <stop offset="1" stop-color="#2684FF"/>
+                                                  </linearGradient>
+                                                  <clipPath id="clip0_149_95">
+                                                    <rect width="24" height="24" fill="white"/>
+                                                  </clipPath>
+                                                </defs>
+                                              </svg>
+                                            <p>Jira</p>
+                                        </div>
+                                        <div class="pl-[8px] pr-[15px] py-[6px] flex gap-[5px] justify-center items-center text-[13px] bg-[#D5E2FA] text-[#2A57D0] rounded-[30px]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <g clip-path="url(#clip0_149_99)">
+                                                  <path d="M11.8985 0.00683594C5.82045 0.00683594 6.19995 2.65295 6.19995 2.65295L6.2067 5.39441H12.0068V6.21747H3.90298C3.90298 6.21747 0.0136719 5.77465 0.0136719 11.9314C0.0136719 18.0882 3.40836 17.8699 3.40836 17.8699H5.4343V15.0129C5.4343 15.0129 5.32508 11.6049 8.7748 11.6049H14.5275C14.5275 11.6049 17.7595 11.6573 17.7595 8.46895V3.19724C17.7595 3.19724 18.2504 0.00683594 11.8985 0.00683594ZM8.70027 1.85041C8.83733 1.85029 8.97307 1.8773 9.09972 1.9299C9.22637 1.9825 9.34145 2.05965 9.43836 2.15695C9.53528 2.25425 9.61213 2.36977 9.66453 2.49692C9.71692 2.62407 9.74383 2.76034 9.7437 2.89794C9.74383 3.03554 9.71692 3.17181 9.66453 3.29896C9.61213 3.42611 9.53528 3.54164 9.43836 3.63893C9.34145 3.73623 9.22637 3.81339 9.09972 3.86598C8.97307 3.91858 8.83733 3.94559 8.70027 3.94547C8.56321 3.94559 8.42747 3.91858 8.30081 3.86598C8.17416 3.81339 8.05909 3.73623 7.96217 3.63893C7.86525 3.54164 7.7884 3.42611 7.736 3.29896C7.68361 3.17181 7.65671 3.03554 7.65683 2.89794C7.65671 2.76034 7.68361 2.62407 7.736 2.49692C7.7884 2.36977 7.86525 2.25425 7.96217 2.15695C8.05909 2.05965 8.17416 1.9825 8.30081 1.9299C8.42747 1.8773 8.56321 1.85029 8.70027 1.85041Z" fill="url(#paint0_linear_149_99)"/>
+                                                  <path d="M12.0709 23.9177C18.1489 23.9177 17.7694 21.2716 17.7694 21.2716L17.7626 18.5302H11.9624V17.7072H20.0663C20.0663 17.7072 23.9556 18.15 23.9556 11.9931C23.9556 5.83632 20.5609 6.05467 20.5609 6.05467H18.5349V8.91161C18.5349 8.91161 18.6442 12.3196 15.1944 12.3196H9.44175C9.44175 12.3196 6.20972 12.2672 6.20972 15.4556V20.7274C6.20972 20.7274 5.71894 23.9177 12.0708 23.9177M15.269 22.0743C15.1319 22.0745 14.9962 22.0475 14.8695 21.9949C14.7429 21.9423 14.6278 21.8651 14.5309 21.7678C14.434 21.6705 14.3571 21.555 14.3047 21.4278C14.2523 21.3007 14.2254 21.1644 14.2255 21.0268C14.2254 20.8892 14.2523 20.7529 14.3047 20.6258C14.3571 20.4986 14.4339 20.3831 14.5308 20.2858C14.6278 20.1884 14.7428 20.1113 14.8695 20.0587C14.9962 20.0061 15.1319 19.9791 15.269 19.9792C15.406 19.9791 15.5418 20.0061 15.6684 20.0587C15.7951 20.1113 15.9101 20.1884 16.0071 20.2857C16.104 20.383 16.1808 20.4985 16.2332 20.6257C16.2856 20.7528 16.3125 20.8891 16.3124 21.0267C16.3125 21.1643 16.2856 21.3006 16.2332 21.4277C16.1808 21.5549 16.104 21.6704 16.0071 21.7677C15.9101 21.865 15.7951 21.9422 15.6684 21.9948C15.5418 22.0474 15.406 22.0745 15.269 22.0743Z" fill="url(#paint1_linear_149_99)"/>
+                                                </g>
+                                                <defs>
+                                                  <linearGradient id="paint0_linear_149_99" x1="230.096" y1="215.072" x2="1421.19" y2="1389.68" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#387EB8"/>
+                                                    <stop offset="1" stop-color="#366994"/>
+                                                  </linearGradient>
+                                                  <linearGradient id="paint1_linear_149_99" x1="345.812" y1="373.677" x2="1624.68" y2="1577.91" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#FFE052"/>
+                                                    <stop offset="1" stop-color="#FFC331"/>
+                                                  </linearGradient>
+                                                  <clipPath id="clip0_149_99">
+                                                    <rect width="24" height="24" fill="white"/>
+                                                  </clipPath>
+                                                </defs>
+                                              </svg>
+                                            <p>Python</p>
+                                        </div>
+                                        <div class="pl-[8px] pr-[15px] py-[6px] flex gap-[5px] justify-center items-center text-[13px] bg-[#D5E2FA] text-[#2A57D0] rounded-[30px]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <g clip-path="url(#clip0_149_124)">
+                                                  <path d="M12.0007 4.80029C8.80067 4.80029 6.80136 6.39967 6.00073 9.59973C7.20036 8.00017 8.60079 7.40036 10.2004 7.80029C11.1137 8.02792 11.7664 8.69017 12.4892 9.42404C13.6655 10.6179 15.0272 11.9999 18.0007 11.9999C21.2006 11.9999 23.2001 10.4004 24.0007 7.19954C22.8007 8.79992 21.4008 9.40004 19.8009 8.99992C18.8878 8.77211 18.2359 8.11004 17.5121 7.37617C16.3365 6.18236 14.9752 4.80029 12.0007 4.80029ZM6.00073 11.9999C2.80086 11.9999 0.801357 13.5995 0.000732422 16.8003C1.20061 15.1999 2.60048 14.5998 4.20036 14.9999C5.11367 15.2277 5.76636 15.8898 6.48917 16.6237C7.66554 17.8175 9.02717 19.1995 12.0007 19.1995C15.2006 19.1995 17.2001 17.6002 18.0007 14.4001C16.8007 15.9997 15.4008 16.5995 13.8009 16.1995C12.8878 15.9719 12.2359 15.3097 11.5121 14.5758C10.3365 13.382 8.97523 11.9999 6.00073 11.9999Z" fill="#38BDF8"/>
+                                                </g>
+                                                <defs>
+                                                  <clipPath id="clip0_149_124">
+                                                    <rect width="24" height="24" fill="white"/>
+                                                  </clipPath>
+                                                </defs>
+                                              </svg>
+                                            <p>Tailwind</p>
+                                        </div>
+                                        <div class="pl-[8px] pr-[15px] py-[6px] flex gap-[5px] justify-center items-center text-[13px] bg-[#D5E2FA] text-[#2A57D0] rounded-[30px]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <g clip-path="url(#clip0_149_114)">
+                                                  <path d="M18.375 0H5.625C2.5184 0 0 2.5184 0 5.625V18.375C0 21.4816 2.5184 24 5.625 24H18.375C21.4816 24 24 21.4816 24 18.375V5.625C24 2.5184 21.4816 0 18.375 0Z" fill="#F0DB4F"/>
+                                                  <path d="M6.3104 20.0559L8.14696 18.9444C8.50133 19.5727 8.82365 20.1042 9.5968 20.1042C10.3379 20.1042 10.8051 19.8143 10.8051 18.6867V11.0182H13.0606V18.7186C13.0606 21.0546 11.6913 22.1179 9.69346 22.1179C7.88924 22.1179 6.84196 21.1835 6.3103 20.0558M14.2856 19.8143L16.122 18.751C16.6055 19.5405 17.2338 20.1204 18.3453 20.1204C19.2799 20.1204 19.8757 19.6532 19.8757 19.0088C19.8757 18.2355 19.2636 17.9616 18.2325 17.5106L17.6688 17.2688C16.0416 16.5762 14.9621 15.7062 14.9621 13.8697C14.9621 12.178 16.251 10.8892 18.2648 10.8892C19.6986 10.8892 20.7297 11.3887 21.4707 12.6936L19.7147 13.8213C19.328 13.1286 18.9093 12.8547 18.2648 12.8547C17.6043 12.8547 17.1854 13.2736 17.1854 13.8213C17.1854 14.4979 17.6043 14.7718 18.5708 15.1908L19.1346 15.4324C21.0517 16.2541 22.1312 17.0917 22.1312 18.9765C22.1312 21.0066 20.5363 22.1181 18.3936 22.1181C16.2994 22.1181 14.9461 21.1193 14.2856 19.8143Z" fill="#323330"/>
+                                                </g>
+                                                <defs>
+                                                  <clipPath id="clip0_149_114">
+                                                    <rect width="24" height="24" fill="white"/>
+                                                  </clipPath>
+                                                </defs>
+                                              </svg>
+                                            <p>JavaScript</p>
+                                        </div>
+                                        
+                                    </div>
+            
+                                </div>
                         </div>
-                        <div class="w-[120px] flex gap-[8px] items-center" style="aspect-ratio: 1/1;" >
+                            
+                        <div class="w-[160px] sm:w-[120px] flex gap-[8px] sm:order-2 order-1 items-center" style="aspect-ratio: 1/1;" >
                             <img src="assets/profile.jpg" class="w-full h-full cover rounded-[8px]" style="object-fit: cover;" alt="">
                         </div>
                     </div>
+                    
                 
                 </div>
 
-                <div class="flex w-[30%] p-[20px] flex-col gap-[15px]" style="border-left: 1px solid #d3d3d3;">
+                <div class="flex w-full sm:w-[30%] p-[20px] flex-col gap-[15px]" style="border-left: 1px solid #d3d3d3;">
                     <div class="flex flex-col gap-[5px]">
                         <p class="text-[#000000] text-[16px]  leading-normal"><b>Education</b></p>
                         <p class="text-[#000000] text-[14px]  leading-normal pb-[5px]" ><b>B.Tech (Automotive Engineering)</b> Delhi Techological University (2020-2024)</p>
@@ -215,6 +333,19 @@
                         <p class="text-[#000000] text-[14px]  leading-normal pb-[5px]"><b>PwC India</b> (Associate Consultant) | September 2024 - Present (6 months) at Gurugram, Haryana, India</p>
                         <p class="text-[#000000] text-[14px]  leading-normal pb-[5px]"><b>Upwork</b> (UX/UI Designer) | December 2021 - August 2024 (2 years 9 months), Remote</p>
                         <p class="text-[#000000] text-[14px]  leading-normal"><b>Uvahcare</b> (UX/UI Designer) | April 2022 - May 2022 (2 months) at Delhi, India</p>
+                    </div>
+
+                    <div class="flex flex-col gap-[7px] bg-[#FCEEE8] rounded-[12px] p-[12px]">
+                        <p class="text-[#321103] text-[16px]  leading-normal"><b>Skills</b></p>
+                        <div style="border-bottom: 1px solid #EFDCD2;"></div>
+                        <div class="flex flex-wrap gap-[8px] pt-[5px]">
+                            <div class="px-[8px] py-[4px] text-[13px] bg-[#EFDCD2] text-[#321103] rounded-[30px]">User research</div>
+                            <div class="px-[8px] py-[4px] text-[13px] bg-[#EFDCD2] text-[#321103] rounded-[30px]">Wireframing</div>
+                            <div class="px-[8px] py-[4px] text-[13px] bg-[#EFDCD2] text-[#321103] rounded-[30px]">Rapid prototyping</div>
+                            <div class="px-[8px] py-[4px] text-[13px] bg-[#EFDCD2] text-[#321103] rounded-[30px]">Storyboarding</div>
+                            <div class="px-[8px] py-[4px] text-[13px] bg-[#EFDCD2] text-[#321103] rounded-[30px]">Visual communication</div>
+                        </div>
+
                     </div>
                     
                     
@@ -232,9 +363,9 @@
                 <div class="w-full" style="border-bottom: 1px solid #d3d3d3;"></div>
                 
                 <div class="flex gap-[20px]">
-                    <a href="index.html" class="text-[#4E5155] hover:underline text-[14px]  leading-normal">Home</a>
-                    <a href="about.html" class="text-[#4E5155] hover:underline text-[14px]  leading-normal">About</a>
-                    <a href="projects.html" class="text-[#4E5155] hover:underline text-[14px]  leading-normal">Projects</a>
+                    <a href="/index.html" class="text-[#4E5155] hover:underline text-[14px]  leading-normal">Home</a>
+                    <a href="/about.html" class="text-[#4E5155] hover:underline text-[14px]  leading-normal">About</a>
+                    <a href="/projects.html" class="text-[#4E5155] hover:underline text-[14px]  leading-normal">Projects</a>
                 </div>
 
             </div>
@@ -337,6 +468,28 @@ function closeOnClickOutside(event) {
         document.removeEventListener('click', closeOnClickOutside);
     }
 }
+
+
+
+const textContainer = document.getElementById("textContainer");
+  const fadeOverlay = document.getElementById("fadeOverlay");
+  const toggleButton = document.getElementById("toggleButton1");
+
+  let isExpanded = false;
+
+  toggleButton.addEventListener("click", () => {
+    isExpanded = !isExpanded;
+    
+    if (isExpanded) {
+      textContainer.classList.remove("max-h-[120px]");
+      fadeOverlay.style.display = "none";
+      toggleButton.textContent = "Show Less";
+    } else {
+      textContainer.classList.add("max-h-[120px]");
+      fadeOverlay.style.display = "block";
+      toggleButton.textContent = "Show More";
+    }
+  });
     </script>
     
 
